@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastrar Aluno</title>
+</head>
+
+<body>
+
+    <h1>Cadastrar Aluno</h1>
+
+    <form name="form1" onsubmit="return processarform()" method="post">
+
+        <label>Nome:</label>
+        <input name="nome" type="text">
+
+        <label>Data de nascimento:</label>
+        <input name="nascimento" type="date">
+
+        <label>Curso do aluno:</label>
+        <select name="curso">
+            
+            <option>Administração</option>
+            <option>Desenvolvimento de Sistemas</option>
+            <option>Marketing</option>
+            <option>Recursos Humanos</option>
+            <option>Ciências Humanas</option>
+        </select>
+
+        <label>Matrícula:</label>
+        <input name="matricula" type="number">
+
+        <label>CPF do aluno:</label>
+        <input
+            name="cpf"
+            type="text"
+            maxlength="11"
+            placeholder="Somente números">
+
+        <input name="enviar" type="submit" value="Enviar">
+        <input name="resetar" type="reset" value="Resetar">
+
+    </form>
+
+    <script src="forms.js"></script>
+
+</body>
+</html>

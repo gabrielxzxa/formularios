@@ -1,0 +1,54 @@
+<!DOCTYPE html> <!-- Informa ao navegador que este arquivo usa HTML5. -->
+<html lang="pt-br"> <!-- Comeca o documento HTML e define o idioma como portugues do Brasil. -->
+	<head> <!-- Comeca a cabeca da pagina, onde ficam configuracoes e importacoes. -->
+		<title>EXEMPLO DE FORMULARIO</title> <!-- Define o titulo que aparece na aba do navegador. -->
+		<meta charset="utf-8"/> <!-- Define a codificacao de caracteres para aceitar acentos. -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"/> <!-- Ajusta a pagina ao tamanho da tela do dispositivo. -->
+		<link rel="icon" type="image/jpg" href="imagens/iconepet.jpg"/> <!-- Define o icone que aparece na aba do navegador. -->
+		<link rel="stylesheet" type="text/css" href="estilo.css"> <!-- Importa o arquivo CSS responsavel pelo visual da pagina. -->
+		<script language="javascript" type="text/javascript"> <!-- Comeca o bloco de codigo JavaScript. -->
+			function validar() { // Cria a funcao que valida os campos do formulario.
+				var nome = form1.nome.value; // Pega o valor digitado no campo nome.
+				var senha = form1.senha.value; // Pega o valor digitado no campo senha.
+
+				if (nome == "") { // Verifica se o campo nome esta vazio.
+					alert("campo invalido"); // Mostra uma mensagem de erro para o usuario.
+					form1.nome.focus(); // Coloca o cursor novamente no campo nome.
+					return false; // Cancela o envio do formulario.
+				} // Fecha a verificacao do campo nome.
+
+				if (senha == "") { // Verifica se o campo senha esta vazio.
+					alert("campo invalido! digita a senha"); // Mostra uma mensagem pedindo a senha.
+					form1.senha.focus(); // Coloca o cursor novamente no campo senha.
+					return false; // Cancela o envio do formulario.
+				} // Fecha a verificacao do campo senha.
+
+				return true; // Permite continuar se nome e senha estiverem preenchidos.
+			} // Fecha a funcao validar.
+
+			function processarform() { // Cria a funcao chamada quando o formulario e enviado.
+				if (validar()) { // Chama a validacao e so continua se ela retornar verdadeiro.
+					alert("Dados enviados com sucesso"); // Mostra mensagem de sucesso.
+					form1.reset(); // Limpa todos os campos do formulario.
+				} // Fecha o if da validacao.
+				return false; // Impede que a pagina recarregue depois do envio.
+			} // Fecha a funcao processarform.
+		</script> <!-- Fecha o bloco de codigo JavaScript. -->
+	</head> <!-- Fecha a cabeca da pagina. -->
+	<body> <!-- Comeca o corpo da pagina, onde fica o conteudo visivel. -->
+		<h1 align="center">EXEMPLO DE FORMULARIO</h1> <!-- Mostra o titulo principal centralizado. -->
+		<hr> <!-- Cria uma linha horizontal na pagina. -->
+		<form name="form1" onsubmit="return processarform()" method="post"> <!-- Cria o formulario e chama a funcao processarform ao enviar. -->
+			Nome: <input name="nome" type="text" size="30"><br> <!-- Cria um campo de texto para digitar o nome. -->
+			Senha: <input name="senha" type="password" size="8"><br> <!-- Cria um campo de senha, escondendo os caracteres digitados. -->
+			Telefone: <input name="Telefone" type="text" size="11"><br> <!-- Cria um campo de texto para digitar o telefone. -->
+			<input name="enviar" type="submit" value="enviar"> <!-- Cria o botao que envia o formulario. -->
+			<input type="reset" value="limpar"> <!-- Cria o botao que limpa os campos do formulario. -->
+		</form> <!-- Fecha o formulario. -->
+		<br> <!-- Quebra uma linha na pagina. -->
+		<hr> <!-- Cria outra linha horizontal na pagina. -->
+		<div id="footer"> <!-- Cria uma area de rodape da pagina. -->
+			<p>Adilson Gabriel - &copy; Todos os direitos reservados<br> Trabalho academico sem fins lucrativos</p> <!-- Mostra o texto do rodape. -->
+		</div> <!-- Fecha a area de rodape. -->
+	</body> <!-- Fecha o corpo da pagina. -->
+</html> <!-- Fecha o documento HTML. -->

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de Musica</title>
+</head>
+<body>
+    <nav class="top-menu">
+        <a href="../index.html">Inicio</a>
+        <a href="../cadastro_cliente/cliente.html">Cliente</a>
+        <a href="../cadastrar_produto/produto.html">Produto</a>
+        <a href="../cadastrar_aluno/aluno.html">Aluno</a>
+        <a href="../cadastrar_paciente/paciente.html">Paciente</a>
+        <a href="../cadastro_motorista/motorista.html">Motorista</a>
+        <a href="../cadastro_animais/pet.html">Pet</a>
+        <a href="../cadastro_musica/musica.html">Musica</a>
+        <a href="../cadastro_funcionario/funcionario.html">Funcionario</a>
+    </nav>
+    <h1>Cadastro de Musica</h1>
+    
+    <form name="form1" onsubmit="return processarform()" method="post">
+        <label>Nome da musica:</label>
+        <input name="nmusica" type="text">
+
+        <label>autor:</label>
+        <input name="autor" type="text">
+
+        <label>duração:</label>
+        <input name="duracao" type="text">
+
+        <label>estilo de musica</label>
+        <select name="estmusica">
+            <option value="">Selecione o estilo da musica</option>
+            <option>Rock</option>
+            <option>Gospel</option>
+           <option>Funk</option>
+            <option>Jazz</option>
+            <option>Reggae</option>
+            <option>MPB(Musica Popular Brasileira)</option>
+            <option>Eletrônica</option>
+           <option>Pop</option>
+            <option>Hip Hop/Rap</option>
+            <option>Blues</option>
+        </select> 
+
+        <label>Album:</label>
+        <input name="album" type="text">
+
+        
+        <label>Cantor:</label>
+        <input name="cantor" type="text" placeholder="Digite o nome do cantor">
+
+         <label>Banda:</label>
+        <input name="banda" type="text">
+
+        Obs: <textarea name="acessorios"  cols="47" rows="8" placeholder="Alguma observação/duvida? digite aqui"></textarea>
+        
+        <input name="enviar" type="submit" value="Enviar">
+        <input name="resetar" type="reset" value="Resetar">
+
+    </form>
+    <div id="footer"> 
+        <p>Adilson Gabriel - &copy; Todos os direitos reservados<br> Trabalho academico sem fins lucrativos</p> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

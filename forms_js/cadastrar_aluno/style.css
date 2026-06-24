@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #e9ecef, #f8f9fa);
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.top-menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background: #1f2937;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.top-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.top-menu a:hover {
+    background: #374151;
+}
+
+h1{
+    color: #333;
+    margin-top: 28px;
+    margin-bottom: 20px;
+}
+
+form{
+    background-color: #fff;
+    width: 420px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+label{
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus{
+    outline: none;
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13,110,253,0.3);
+}
+
+input[type="submit"],
+input[type="reset"]{
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]{
+    background-color: #198754;
+    color: white;
+}
+
+input[type="submit"]:hover{
+    background-color: #157347;
+}
+
+input[type="reset"]{
+    background-color: #dc3545;
+    color: white;
+}
+
+input[type="reset"]:hover{
+    background-color: #bb2d3b;
+}
+
+textarea{
+    resize: none;
+}

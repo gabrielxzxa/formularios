@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link rel="stylesheet" type="text/css" href="style.css"> 
+    <title>Cadastro de paciente</title>
+</head>
+<body>
+    <nav class="top-menu">
+        <a href="../index.html">Inicio</a>
+        <a href="../cadastro_cliente/cliente.html">Cliente</a>
+        <a href="../cadastrar_produto/produto.html">Produto</a>
+        <a href="../cadastrar_aluno/aluno.html">Aluno</a>
+        <a href="../cadastrar_paciente/paciente.html">Paciente</a>
+        <a href="../cadastro_motorista/motorista.html">Motorista</a>
+        <a href="../cadastro_animais/pet.html">Pet</a>
+        <a href="../cadastro_musica/musica.html">Musica</a>
+        <a href="../cadastro_funcionario/funcionario.html">Funcionario</a>
+    </nav>
+    <h1>CADASTRO DOS PACIENTES</h1>
+    <form name="form1" onsubmit="return processarform()" method="post">
+         nome: <input name = "nome" type="text" size="40"><br>
+        Data de nascimento : <input name="idade" type="date" size="1000"><br>
+         cpf:<input name="cpf"type="text" maxlength="11" placeholder="Somente números">
+         Comentarios: <textarea cols="45" rows="8" placeholder="Deixe seu comentario aqui"></textarea>
+            <input name="enviar" type="submit" value="enviar"><br>
+            <input name="resetar" type="reset" value="resetar"><br>
+           
+    </form>
+    <div id="footer"> 
+        <h5 align="center">Adilson Gabriel - &copy; Todos os direitos reservados<br> Trabalho academico sem fins lucrativos</h5>
+    </div>
+     <script src="script.js"></script>
+</body>
+</html>

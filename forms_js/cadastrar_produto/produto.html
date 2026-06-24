@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="produto.png">    
+    <title>Cadastrar produto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="top-menu">
+        <a href="../index.html">Inicio</a>
+        <a href="../cadastro_cliente/cliente.html">Cliente</a>
+        <a href="../cadastrar_produto/produto.html">Produto</a>
+        <a href="../cadastrar_aluno/aluno.html">Aluno</a>
+        <a href="../cadastrar_paciente/paciente.html">Paciente</a>
+        <a href="../cadastro_motorista/motorista.html">Motorista</a>
+        <a href="../cadastro_animais/pet.html">Pet</a>
+        <a href="../cadastro_musica/musica.html">Musica</a>
+        <a href="../cadastro_funcionario/funcionario.html">Funcionario</a>
+    </nav>
+    <h1>Cadastre seu produto</h1>
+       <form name = "form1" onsubmit="return envform()" method="post">
+            nome: <input name = "nome" type="text" size="40"><br>
+            Preço: R$<input name = "preco" type="text" ><br>
+            Estoque : <input name="estoque" type="text" size="1000"><br>
+            codigo: <input name = "codigo" type="text" size="12"><br>
+            Comentarios: <textarea cols="42" rows="7" placeholder="Deixe seu comentario aqui"></textarea>
+            <input name="enviar" type="submit" value="enviar"><br>
+            <input name="resetar" type="reset" value="resetar"><br> 
+       </form>
+       <br><br><br><br><br><br>
+       <hr>
+       
+     
+			<p>Adilson Gabriel - &copy; Todos os direitos reservados Trabalho academico sem fins lucrativos</p> 
+		
+     <script src="script.js"></script>
+</body>
+</html>

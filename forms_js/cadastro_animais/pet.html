@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de pet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="top-menu">
+        <a href="../index.html">Inicio</a>
+        <a href="../cadastro_cliente/cliente.html">Cliente</a>
+        <a href="../cadastrar_produto/produto.html">Produto</a>
+        <a href="../cadastrar_aluno/aluno.html">Aluno</a>
+        <a href="../cadastrar_paciente/paciente.html">Paciente</a>
+        <a href="../cadastro_motorista/motorista.html">Motorista</a>
+        <a href="../cadastro_animais/pet.html">Pet</a>
+        <a href="../cadastro_musica/musica.html">Musica</a>
+        <a href="../cadastro_funcionario/funcionario.html">Funcionario</a>
+    </nav>
+    <main class="container">
+        <form name="form1" onsubmit="return processarform()" method="post">
+            <h1>Cadastro de pet</h1>
+
+            <label for="nome">Nome:</label>
+            <input id="nome" name="nome" type="text" placeholder="Nome do pet">
+
+            <label for="nome">nome  do tutor</label>
+            <input id="tutor" name="tutor" type="text" placeholder="Digite o nome do tutor">
+
+            <label for="idade">Idade:</label>
+            <input id="idade" name="idade" type="text" min="0" placeholder="Idade do pet">
+
+            <label for="tipo">Tipo do animal:</label>
+            <select id="tipo" name="tipo">
+                <option value="">Selecione</option>
+                <option>Cachorro</option>
+                <option>Gato</option>
+                <option>Ovelha</option>
+                <option>Vaca</option>
+                <option>Cavalo</option>
+            </select>
+
+            <label for="cor">Cor do seu pet:</label>
+            <select id="cor" name="cor">
+                <option value="">Selecione</option>
+                <option>Preto</option>
+                <option>Branco</option>
+                <option>Roxo</option>
+                <option>Amarelo</option>
+                <option>Azul</option>
+            </select>
+
+            <label for="raca">Raça:</label>
+            <select id="raca" name="raca">
+                <option value="">Selecione</option>
+                <option>Labrador Retriever</option>
+                <option>Persa</option>
+                <option>Dorper</option>
+                <option>Holandesa</option>
+                <option>Mangalarga Marchador</option>
+            </select>
+
+            <label for="acessorios">Acessorios:</label>
+            <textarea id="acessorios" name="acessorios" rows="6" placeholder="Digite os acessorios do seu pet"></textarea>
+
+            <div class="botoes">
+                <input name="enviar" type="submit" value="Enviar">
+                <input name="resetar" type="reset" value="Resetar">
+            </div>
+        </form>
+    </main>
+    <div id="footer"> 
+        <h5 align="center">Adilson Gabriel - &copy; Todos os direitos reservados<br> Trabalho academico sem fins lucrativos</h5>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

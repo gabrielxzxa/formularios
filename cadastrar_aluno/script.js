@@ -5,19 +5,19 @@ function validarform() {
     var matricula = form1.matricula.value;
     var curso = form1.curso.value;
 
-    if (nome.trim() === "") {
+    if (nome== "") {
         alert("O campo nome está vazio. Por favor, digite o nome do aluno.");
         form1.nome.focus();
         return false;
     }
 
-    if (nascimento === "") {
+    if (nascimento == "") {
         alert("O campo data de nascimento está vazio. Digite a data de nascimento do aluno.");
         form1.nascimento.focus();
         return false;
     }
 
-    if (cpf === "") {
+    if (cpf == "") {
         alert("O campo CPF está vazio. Por favor, digite o CPF do aluno.");
         form1.cpf.focus();
         return false;
@@ -35,13 +35,13 @@ function validarform() {
         return false;
     }
 
-    if (matricula === "") {
+    if (matricula.trim() == "") {
         alert("O campo matrícula está vazio. Digite a matrícula do aluno.");
         form1.matricula.focus();
         return false;
     }
 
-    if (curso.trim() === "") {
+    if (curso.trim() == "") {
         alert("O campo curso está vazio. Por favor, digite o curso do aluno.");
         form1.curso.focus();
         return false;
@@ -54,8 +54,7 @@ function processarform() {
     if (validarform()) {
         alert("Dados enviados com sucesso!");
         form1.reset();
-        return true; 
     }
-
+    
     return false;
 }

@@ -2,6 +2,31 @@ body {
     font-family: Arial, sans-serif;
     background-color: #e9ecef;
     text-align: center;
+    margin: 0;
+}
+
+.top-menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background: #1f2937;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.top-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.top-menu a:hover {
+    background: #374151;
 }
 
 h1 {
@@ -46,4 +71,8 @@ input[type="reset"] {
 
 input[type="reset"]:hover {
     background-color: #5c636a;
+}
+
+textarea {
+    resize: none;
 }

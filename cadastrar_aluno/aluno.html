@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastrar Aluno</title>
+</head>
+
+<body>
+  <nav class="top-menu">
+    <a href="../index.html">Inicio</a>
+    <a href="../cadastro_cliente/cliente.html">Cliente</a>
+    <a href="../cadastrar_produto/produto.html">Produto</a>
+    <a href="../cadastrar_aluno/aluno.html">Aluno</a>
+    <a href="../cadastrar_paciente/paciente.html">Paciente</a>
+    <a href="../cadastro_motorista/motorista.html">Motorista</a>
+    <a href="../cadastro_animais/pet.html">Pet</a>
+    <a href="../cadastro_musica/musica.html">Musica</a>
+    <a href="../cadastro_funcionario/funcionario.html">Funcionario</a>
+  </nav>
+
+  <div class="titulo">
+    <h1>Cadastro de aluno</h1>
+  </div>
+
+    <form name="form1" onsubmit="return processarform()" method="post">
+
+        <label>Nome:</label>
+        <input name="nome" type="text">
+
+        <label>Data de nascimento:</label>
+        <input name="nascimento" type="date">
+
+        <label>Curso do aluno:</label>
+        <select name="curso">
+            <option value="">Selecione seu Curso</option>
+            <option>Administração</option>
+            <option>Desenvolvimento de Sistemas</option>
+            <option>Marketing</option>
+            <option>Recursos Humanos</option>
+            <option>Ciências Humanas</option>
+        </select>
+
+        <label>Matrícula:</label>
+        <input name="matricula" type="text">
+
+        <label>CPF do aluno:</label>
+        <input name="cpf" type="text" maxlength="11" placeholder="Somente números">
+            Comentarios: <textarea cols="47" rows="8" placeholder="Deixe seu comentario aqui"></textarea>
+        
+        <input name="enviar" type="submit" value="Enviar">
+        <input name="resetar" type="reset" value="Resetar">
+
+    </form>
+    <br><br>
+<hr>
+<div id="footer"> 
+    <p>Adilson Gabriel - &copy; Todos os direitos reservados<br> Trabalho academico sem fins lucrativos</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

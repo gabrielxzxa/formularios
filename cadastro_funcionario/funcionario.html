@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de funcionario</title>
+</head>
+<body>
+  <nav class="top-menu">
+    <a href="index.html">Inicio</a>
+    <a href="../cadastro_cliente/cliente.html">Cliente</a>
+    <a href="../cadastrar_produto/produto.html">Produto</a>
+    <a href="../cadastrar_aluno/aluno.html">Aluno</a>
+    <a href="../cadastrar_paciente/paciente.html">Paciente</a>
+    <a href="../cadastro_motorista/motorista.html">Motorista</a>
+    <a href="../cadastro_animais/pet.html">Pet</a>
+    <a href="../cadastro_musica/musica.html">Musica</a>
+    <a href="../cadastro_funcionario/funcionario.html">Funcionario</a>
+  </nav>
+    
+  <div class="titulo">
+    <h1>Cadastro de funcionario</h1>
+  </div>
+
+    <form name="form1" onsubmit="return processarform()" method="post">
+
+        <label>Nome:</label>
+        <input name="nome" type="text">
+
+        
+        <label>Nome Do pai:</label>
+        <input name="npai" type="text">
+
+        <label>Nome da mãe:</label>
+        <input name="nmae" type="text">
+
+        <label>Data de admissão:</label>
+        <input name="dtadmissao" type="date">
+
+        <label>Estado civil:</label>
+
+        <select name="estadocivil">
+            <option value="">Selecione o estado civil</option>
+            <option>Solteiro(a)</option>
+            <option>Casado(a)</option>
+            <option>Divorciado(a)</option>
+            <option>Viúvo(a)</option>
+            <option>União Estável</option>
+            <option>Separado(a)</option>
+        </select>
+        <label>Escolaridade:</label>
+        <select name="escolaridade">
+            <option value="">Selecione a escolaridade</option>
+            <option>Ensino Fundamental Incompleto</option>
+            <option>Ensino Fundamental Completo</option>
+            <option>Ensino Médio Incompleto</option>
+            <option>Ensino Médio Completo</option>
+            <option>Curso Técnico Incompleto</option>
+            <option>Curso Técnico Completo</option>
+            <option>Ensino Superior Incompleto</option>
+            <option>Ensino Superior Completo</option>
+            <option>Pós-Graduação</option>
+            <option>Mestrado/Doutorado</option>
+        </select>
+        <label>Idiomas:</label>
+        <select name="idiomas">
+            <option value="">Selecione o idioma do funcionario</option>
+            <option>Português</option>
+            <option>Inglês</option>
+            <option>Espanhol</option>
+            <option>Francês</option>
+            <option>Alemão</option>
+            <option>Italiano</option>
+            <option>Japonês</option>
+            <option>Chinês (Mandarim)</option>
+            <option>Coreano</option>
+            <option>Russo</option>
+        </select>
+        <label>CIdade:</label>
+        <select name="cidade">
+            <option value="">Selecione a cidade</option>
+            <option>Campinas</option>
+            <option>Kyoto</option>
+            <option>Vancouver</option>
+            <option>Marrakech</option>
+            <option>Reykjavik</option>
+            <option>Lima</option>
+            <option>Auckland</option>
+            <option>Praga</option>
+            <option>Nairobi</option>
+            <option>Seul</option>
+        </select> 
+        <label>Estado:</label>
+        <select name="estado">
+            <option value="">Selecione o estado do funcionario</option>
+        <option >Acre</option>
+        <option>Alagoas</option>
+        <option>Amapá</option>
+        <option>Amazonas</option>
+        <option>Bahia</option>
+        <option>Ceará</option>
+        <option>Distrito Federal</option>
+        <option>Espírito Santo</option>
+        <option>Goiás</option>
+        <option>Maranhão</option>
+        <option>Mato Grosso</option>
+        <option>Mato Grosso do Sul</option>
+        <option>Minas Gerais</option>
+        <option>Pará</option>
+        <option>Paraíba</option>
+        <option>Paraná</option>
+        <option>Pernambuco</option>
+        <option>Piauí</option>
+        <option>Rio de Janeiro</option>
+        <option>Rio Grande do Norte</option>
+</select>
+               <label>Cep:</label>
+        <select name="cep">
+            <option value="">Selecione o cep do funcionario</option>
+            <option>01001-000</option>
+            <option>01311-000</option>
+            <option>04003-000</option>
+            <option>05010-000</option>
+            <option>13010-111</option>
+            <option>20040-020</option>
+            <option>30130-110</option>
+            <option>40020-000</option>
+            <option>70040-010</option>
+            <option>80010-000</option>
+        </select>
+
+        <label>Endereço:</label>
+        <input name="endereco" type="text">
+
+        <label>salario:</label>
+        <input name="salario" type="text"  placeholder="Digite o salario do funcionario">
+            Conhecimento: <textarea cols="47" rows="8" placeholder="Digite seus conhecimentos aqui"></textarea>
+
+                Observações: <textarea cols="47" rows="8" placeholder="Tem alguma observaçao? digite aqui!" ></textarea>
+        
+        <input name="enviar" type="submit" value="Enviar">
+        <input name="resetar" type="reset" value="Resetar">
+
+    </form>
+    <br><br>
+<hr>
+<div id="footer"> 
+    <p>Adilson Gabriel - &copy; Todos os direitos reservados<br> Trabalho academico sem fins lucrativos</p>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

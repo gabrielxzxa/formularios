@@ -36,14 +36,27 @@
 		</script> <!-- Fecha o bloco de codigo JavaScript. -->
 	</head> <!-- Fecha a cabeca da pagina. -->
 	<body> <!-- Comeca o corpo da pagina, onde fica o conteudo visivel. -->
+		<nav class="top-menu">
+			<a href="index.html">Inicio</a>
+			<a href="cadastro_cliente/cliente.html">Cliente</a>
+			<a href="cadastrar_produto/produto.html">Produto</a>
+			<a href="cadastrar_aluno/aluno.html">Aluno</a>
+			<a href="cadastrar_paciente/paciente.html">Paciente</a>
+			<a href="cadastro_motorista/motorista.html">Motorista</a>
+			<a href="cadastro_animais/pet.html">Pet</a>
+			<a href="cadastro_musica/motorista.html">Musica</a>
+			<a href="cadastro_funcionario/funcionario.html">Funcionario</a>
+		</nav>
 		<h1 align="center">EXEMPLO DE FORMULARIO</h1> <!-- Mostra o titulo principal centralizado. -->
 		<hr> <!-- Cria uma linha horizontal na pagina. -->
 		<form name="form1" onsubmit="return processarform()" method="post"> <!-- Cria o formulario e chama a funcao processarform ao enviar. -->
 			Nome: <input name="nome" type="text" size="30"><br> <!-- Cria um campo de texto para digitar o nome. -->
 			Senha: <input name="senha" type="password" size="8"><br> <!-- Cria um campo de senha, escondendo os caracteres digitados. -->
 			Telefone: <input name="Telefone" type="text" size="11"><br> <!-- Cria um campo de texto para digitar o telefone. -->
+			Comentarios: <br><textarea cols="45" rows="8" placeholder="Deixe seu comentario aqui"></textarea><br>
 			<input name="enviar" type="submit" value="enviar"> <!-- Cria o botao que envia o formulario. -->
 			<input type="reset" value="limpar"> <!-- Cria o botao que limpa os campos do formulario. -->
+			
 		</form> <!-- Fecha o formulario. -->
 		<br> <!-- Quebra uma linha na pagina. -->
 		<hr> <!-- Cria outra linha horizontal na pagina. -->

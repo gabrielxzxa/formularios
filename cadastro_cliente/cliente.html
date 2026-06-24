@@ -10,6 +10,17 @@
 </head>
 
 <body>
+    <nav class="top-menu">
+        <a href="../index.html">Inicio</a>
+        <a href="../cadastro_cliente/cliente.html">Cliente</a>
+        <a href="../cadastrar_produto/produto.html">Produto</a>
+        <a href="../cadastrar_aluno/aluno.html">Aluno</a>
+        <a href="../cadastrar_paciente/paciente.html">Paciente</a>
+        <a href="../cadastro_motorista/motorista.html">Motorista</a>
+        <a href="../cadastro_animais/pet.html">Pet</a>
+        <a href="../cadastro_musica/musica.html">Musica</a>
+        <a href="../cadastro_funcionario/funcionario.html">Funcionario</a>
+    </nav>
         <h1>Faça seu cadastro</h1>
        <form name="form1" onsubmit="return validarform()" method="post">
     
@@ -21,11 +32,15 @@
 
     <label>Confirmar senha:</label>
     <input name="consenha" type="password">
-
+    <br>
+    Comentarios: <textarea cols="40" rows="8" placeholder="Deixe seu comentario aqui"></textarea>
     <input name="enviar" type="submit" value="Enviar">
     <input name="resetar" type="reset" value="Resetar">
 
 </form>
+<div id="footer"> 
+    <p>Adilson Gabriel - &copy; Todos os direitos reservados<br> Trabalho academico sem fins lucrativos</p>
+</div>
         <script src="forms.js"></script>
 </body>
 </html>

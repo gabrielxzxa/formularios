@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de motorista</title>
+</head>
+<body>
+    <nav class="top-menu">
+        <a href="../index.html">Inicio</a>
+        <a href="../cadastro_cliente/cliente.html">Cliente</a>
+        <a href="../cadastrar_produto/produto.html">Produto</a>
+        <a href="../cadastrar_aluno/aluno.html">Aluno</a>
+        <a href="../cadastrar_paciente/paciente.html">Paciente</a>
+        <a href="../cadastro_motorista/motorista.html">Motorista</a>
+        <a href="../cadastro_animais/pet.html">Pet</a>
+        <a href="../cadastro_musica/musica.html">Musica</a>
+        <a href="../cadastro_funcionario/funcionario.html">Funcionario</a>
+    </nav>
+    <h1>Cadastro de motorista</h1>
+    
+    <form name="form1" onsubmit="return processarform()" method="post">
+
+        <label>Nome:</label>
+        <input name="nome" type="text">
+
+        <label>endereço</label>
+        <input name="endereco" type="text">
+
+        <label>Cor do seu carro:</label>
+        <select name="cor">
+            <option value="">Escolha a cor do seu carro</option>
+            <option>Preto</option>
+            <option>Branco</option>
+           <option>Roxo</option>
+            <option>amarelo</option>
+            <option>Azul</option>
+        </select> 
+
+        <label>placa:</label>
+        <input name="placa" type="text">
+
+        <label>CPF:</label>
+        <input name="cpf" type="text" maxlength="11" placeholder="Somente números" inputmode="numeric">
+
+        <label>cnh</label>
+        <select name="cnh">
+          <option value="">Selecione</option>
+            <option value="A">Categoria A</option>
+            <option value="B">Categoria B</option>
+           <option value="C">Categoria C</option>
+            <option value="D">Categoria D</option>
+            <option value="E">Categoria E</option>
+        </select>
+
+        <label>nome do carro</label>
+        <input name="ncarro" type="text">
+
+        Acessorios: <textarea name="acessorios"  cols="47" rows="8" placeholder="Digite os Acessorios do seu carro"></textarea>
+        
+        <input name="enviar" type="submit" value="Enviar">
+        <input name="resetar" type="reset" value="Resetar">
+
+    </form>
+    <div id="footer"> 
+        <p>Adilson Gabriel - &copy; Todos os direitos reservados<br> Trabalho academico sem fins lucrativos</p> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
